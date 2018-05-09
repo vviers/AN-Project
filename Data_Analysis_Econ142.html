@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Data_Analysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Data_Analysis_Econ142</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,18 +11771,15 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ECON-142---Applied-Econometrics-&amp;-Public-Policy">ECON 142 - Applied Econometrics &amp; Public Policy<a class="anchor-link" href="#ECON-142---Applied-Econometrics-&amp;-Public-Policy">&#182;</a></h1><h2>&lt;a href = "<a href="https://github.com/vviers/AN-Project"&gt;">https://github.com/vviers/AN-Project"&gt;</a> Network Analysis of Voting Behaviors in the French National Assembly &lt;/a&gt;</h2>
-<h3 id="Final-Project,-Vincent-Viers">Final Project, Vincent Viers<a class="anchor-link" href="#Final-Project,-Vincent-Viers">&#182;</a></h3>
+<h1 id="ECON-142---Applied-Econometrics-&amp;-Public-Policy">ECON 142 - Applied Econometrics &amp; Public Policy<a class="anchor-link" href="#ECON-142---Applied-Econometrics-&amp;-Public-Policy">&#182;</a></h1><h2 id="&lt;a-href-=-&quot;https://github.com/vviers/AN-Project&quot;&gt;-Network-Analysis-of-Voting-Behaviors-in-the-French-National-Assembly-&lt;/a&gt;">&lt;a href = "<a href="https://github.com/vviers/AN-Project&quot;&gt;">https://github.com/vviers/AN-Project"&gt;</a> Network Analysis of Voting Behaviors in the French National Assembly &lt;/a&gt;<a class="anchor-link" href="#&lt;a-href-=-&quot;https://github.com/vviers/AN-Project&quot;&gt;-Network-Analysis-of-Voting-Behaviors-in-the-French-National-Assembly-&lt;/a&gt;">&#182;</a></h2><h3 id="Final-Project,-Vincent-Viers">Final Project, Vincent Viers<a class="anchor-link" href="#Final-Project,-Vincent-Viers">&#182;</a></h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11822,8 +11817,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11850,10 +11844,9 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 <li><p>The President of the National Assembly never votes. As we will see, this observation is quite important for the upcoming analysis.</p>
 </li>
 </ul>
-<h1 id="Data-Cleaning">Data Cleaning<a class="anchor-link" href="#Data-Cleaning">&#182;</a></h1><h3>(more details available in <code>Vote_Assemblee_Nationale_Adjacency_Matrix.ipynb</code> and <code>Generate_Data.ipynb</code>) in this project's &lt;a href = "<a href="https://github.com/vviers/AN-Project"&gt;">https://github.com/vviers/AN-Project"&gt;</a> Github repo &lt;/a&gt;).</h3>
-<p>The Data Cleaning portion of this project was very long and tedious because of the way the XML data was stored.</p>
+<h1 id="Data-Cleaning">Data Cleaning<a class="anchor-link" href="#Data-Cleaning">&#182;</a></h1><h3 id="(more-details-available-in-Vote_Assemblee_Nationale_Adjacency_Matrix.ipynb-and-Generate_Data.ipynb)-in-this-project's-&lt;a-href-=-&quot;https://github.com/vviers/AN-Project&quot;&gt;-Github-repo-&lt;/a&gt;).">(more details available in <code>Vote_Assemblee_Nationale_Adjacency_Matrix.ipynb</code> and <code>Generate_Data.ipynb</code>) in this project's &lt;a href = "<a href="https://github.com/vviers/AN-Project&quot;&gt;">https://github.com/vviers/AN-Project"&gt;</a> Github repo &lt;/a&gt;).<a class="anchor-link" href="#(more-details-available-in-Vote_Assemblee_Nationale_Adjacency_Matrix.ipynb-and-Generate_Data.ipynb)-in-this-project's-&lt;a-href-=-&quot;https://github.com/vviers/AN-Project&quot;&gt;-Github-repo-&lt;/a&gt;).">&#182;</a></h3><p>The Data Cleaning portion of this project was very long and tedious because of the way the XML data was stored.</p>
 <ul>
-<li><p>I started by downloading the XML file from the &lt;a href = "<a href="http://data.assemblee-nationale.fr/"&gt;National">http://data.assemblee-nationale.fr/"&gt;National</a> Assembly's open data website &lt;/a&gt; and scrapping each recorded ballot's ID, date, and basic info.</p>
+<li><p>I started by downloading the XML file from the &lt;a href = "<a href="http://data.assemblee-nationale.fr/&quot;&gt;National">http://data.assemblee-nationale.fr/&quot;&gt;National</a> Assembly's open data website &lt;/a&gt; and scrapping each recorded ballot's ID, date, and basic info.</p>
 </li>
 <li><p>I then shortlisted a list of 129 most important ballots i.e. those concerning the entierty of a law proposal. I am therefore excluding the thousands of votes on very specific amendments and where only a couple dozen MPs (max!) vote. Typically these ballots start with "l'ensemble de la proposition de loi..." or "la proposition de loi..."(in <code>list_ballots.csv</code>).</p>
 </li>
@@ -11894,8 +11887,7 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11941,8 +11933,7 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11969,7 +11960,9 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[228]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12062,7 +12055,9 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[229]:</div>
+
 
 
 
@@ -12076,8 +12071,7 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12086,8 +12080,7 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12113,7 +12106,9 @@ I then present a simple and context-relevant model of node centrality. Using a 2
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[230]:</div>
+
 
 
 
@@ -12133,8 +12128,7 @@ Name: ballot, dtype: int64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12143,8 +12137,7 @@ Name: ballot, dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12174,7 +12167,9 @@ Name: ballot, dtype: int64</pre>
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>2012. Mean: 541.0
@@ -12190,8 +12185,7 @@ Name: ballot, dtype: int64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12200,8 +12194,7 @@ Name: ballot, dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12237,7 +12230,9 @@ Name: ballot, dtype: int64</pre>
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>N: 126
@@ -12253,7 +12248,9 @@ p90: 566.5
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -12378,8 +12375,7 @@ KwCAhJQrAICElCsAgIT+H7A73z/Bqe/qAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12388,8 +12384,7 @@ KwCAhJQrAICElCsAgIT+H7A73z/Bqe/qAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12458,14 +12453,12 @@ KwCAhJQrAICElCsAgIT+H7A73z/Bqe/qAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-info" >
-
-<p> It might be worth stopping here to make the data building strategy as clear as possible since several approaches are possible. For example, what I originally did was to only focus on MPs who had voted in *all* ballots and drop those who had missed a ballot. However, this approach made me loose a significant amount of MPs </p><p>**What I do**: Each MP who voted *at least once* throughout the year is included in the yearly matrix. This procedure is less robust to events like an MP being revoked in the middle of the year, but this allows me to maximize the size of my networks.</p><p>&lt;/div&gt;</p>
+<p>It might be worth stopping here to make the data building strategy as clear as possible since several approaches are possible. For example, what I originally did was to only focus on MPs who had voted in <em>all</em> ballots and drop those who had missed a ballot. However, this approach made me loose a significant amount of MPs.</p>
+<p><strong>What I do</strong>: Each MP who voted <em>at least once</em> throughout the year is included in the yearly matrix. This procedure is less robust to events like an MP being revoked in the middle of the year, but this allows me to maximize the size of my networks.</p>
 
 </div>
 </div>
@@ -12503,8 +12496,7 @@ KwCAhJQrAICElCsAgIT+H7A73z/Bqe/qAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12535,7 +12527,9 @@ KwCAhJQrAICElCsAgIT+H7A73z/Bqe/qAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Size (overall): [636]
@@ -12552,8 +12546,7 @@ Size (2016): [592]
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12562,27 +12555,29 @@ Size (2016): [592]
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Building-Yearly-Adjacency-Matrices">Building Yearly Adjacency Matrices<a class="anchor-link" href="#Building-Yearly-Adjacency-Matrices">&#182;</a></h3><hr>
 <p>For now, we have an unweighted adjacency matrix for each ballot $b$ i.e.</p>
-$$ D_b = 
+<p>$$ D_b = 
 \begin{bmatrix}
-    d_{11}       & d_{12} & d_{13} & \dots & d_{1n} \\
-    d_{21}       & d_{22} & d_{23} & \dots & d_{2n} \\
+    d_{11}       &amp; d_{12} &amp; d_{13} &amp; \dots &amp; d_{1n} \\
+    d_{21}       &amp; d_{22} &amp; d_{23} &amp; \dots &amp; d_{2n} \\
     \vdots \\
-    d_{n1}       & d_{n2} & d_{n3} & \dots & d_{nn}
-\end{bmatrix} $$<p>where $D_b$ is the square and diagonal adjacency matrix of size $(n \times n)$ with $n$ the total number of MPs under consideration for ballot $b$:</p>
-$$[D_b]_{ij} = 1, \quad \text{if MP i and MP j voted in the same way (For, Against, Abstention)}$$<p>and zero otherwise.</p>
+    d_{n1}       &amp; d_{n2} &amp; d_{n3} &amp; \dots &amp; d_{nn}
+\end{bmatrix} $$</p>
+<p>where $D_b$ is the square and diagonal adjacency matrix of size $(n \times n)$ with $n$ the total number of MPs under consideration for ballot $b$:</p>
+<p>$$[D_b]_{ij} = 1, \quad \text{if MP i and MP j voted in the same way (For, Against, Abstention)}$$ and zero otherwise.</p>
 <p>By assumption, we do not allow self-loops:</p>
-$$[D_b]_{ii} = 0, \quad \forall i$$<hr>
+<p>$$[D_b]_{ii} = 0, \quad \forall i$$</p>
+<hr>
 <p>Things start getting more interesting once we're adding all adjacency matrices together over the course of a year and dividing the resulting matrix by the total number of ballots during the year:</p>
-$$P = \frac{1}{B}\sum_{b = 1}^B  D_b$$<p>where $B$ is the total number of ballots in a given year.</p>
+<p>$$P = \frac{1}{B}\sum_{b = 1}^B  D_b$$ where $B$ is the total number of ballots in a given year.</p>
 <p>It is easy to see that the entries of matrix P will be equal to the empirical frequencies of similar voting for any two MPs i and j:</p>
-$$[P]_{ij} = \frac{\sum_{b = 1}^B [D_b]_{ij}}{B} = \frac{\text{# of times i and j voted the same way}}{\text{# of ballots}}$$<p>This, as we will see later, could be roughly interpreted as the probability (or historical frequency to be more precise) that MP i and j will vote in the same way.</p>
+<p>$$[P]_{ij} = \frac{\sum_{b = 1}^B [D_b]_{ij}}{B} = \frac{\text{# of times i and j voted the same way}}{\text{# of ballots}}$$</p>
+<p>This, as we will see later, could be roughly interpreted as the probability (or historical frequency to be more precise) that MP i and j will vote in the same way.</p>
 <p>Let us note that these "probabilities" will be slightly downward biased since MPs are sometimes simply not present at each ballot (and get a row of 0 on these ballots by default).</p>
 <hr>
 <p>The following function <code>yearly_matrix()</code> creates such yearly matrix $P$ from a list of matrices $D$:</p>
@@ -12610,8 +12605,7 @@ $$[P]_{ij} = \frac{\sum_{b = 1}^B [D_b]_{ij}}{B} = \frac{\text{# of times i and 
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12620,8 +12614,7 @@ $$[P]_{ij} = \frac{\sum_{b = 1}^B [D_b]_{ij}}{B} = \frac{\text{# of times i and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12629,8 +12622,7 @@ $$[P]_{ij} = \frac{\sum_{b = 1}^B [D_b]_{ij}}{B} = \frac{\text{# of times i and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12652,8 +12644,7 @@ $$[P]_{ij} = \frac{\sum_{b = 1}^B [D_b]_{ij}}{B} = \frac{\text{# of times i and 
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12676,8 +12667,7 @@ $$[P]_{ij} = \frac{\sum_{b = 1}^B [D_b]_{ij}}{B} = \frac{\text{# of times i and 
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12704,7 +12694,9 @@ We drop him to ensure that our graph is fully connected (he is an <em>isolate</e
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[282]:</div>
+
 
 
 
@@ -12731,8 +12723,7 @@ We drop him to ensure that our graph is fully connected (he is an <em>isolate</e
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12763,7 +12754,9 @@ We drop him to ensure that our graph is fully connected (he is an <em>isolate</e
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Density: 0.9353442028985507, Diameter: 2
@@ -12772,7 +12765,9 @@ We drop him to ensure that our graph is fully connected (he is an <em>isolate</e
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -15338,8 +15333,7 @@ IiIiIlZMgV9ERERExIop8IuIiIiIWLH/A0lDdlA7YhKMAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15382,7 +15376,9 @@ IiIiIlZMgV9ERERExIop8IuIiIiIWLH/A0lDdlA7YhKMAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[284]:</div>
+
 
 
 
@@ -15393,7 +15389,9 @@ IiIiIlZMgV9ERERExIop8IuIiIiIWLH/A0lDdlA7YhKMAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -21071,8 +21069,7 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -21101,7 +21098,9 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>There are 154893.0 edges in the network.
@@ -21132,7 +21131,9 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>There are now 94974.0 edges in the network.
@@ -21161,7 +21162,9 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[265]:</div>
+
 
 
 
@@ -21175,8 +21178,7 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -21218,7 +21220,9 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[267]:</div>
+
 
 
 
@@ -21232,8 +21236,7 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -21255,8 +21258,7 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -21286,7 +21288,9 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Density: 0.5755128010907439, Diameter: 3
@@ -21295,7 +21299,9 @@ B9r9zo+x1MPvAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -23863,8 +23869,7 @@ SUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -23874,8 +23879,7 @@ SUVORK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -23883,8 +23887,7 @@ SUVORK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -23894,8 +23897,7 @@ SUVORK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -23921,8 +23923,7 @@ SUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -23984,7 +23985,9 @@ SUVORK5CYII=
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -24622,7 +24625,9 @@ XgghQoAUeyGECAFS7IUQIgT8B2OVtXZ+XptjAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -25119,8 +25124,7 @@ AAAASUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25130,8 +25134,7 @@ AAAASUVORK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25161,7 +25164,9 @@ e.g. 2013, using a .5 threshold yields 2 subgraphs of length 246 and 324, respec
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[285]:</div>
+
 
 
 
@@ -25175,8 +25180,7 @@ e.g. 2013, using a .5 threshold yields 2 subgraphs of length 246 and 324, respec
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25239,7 +25243,9 @@ e.g. 2013, using a .5 threshold yields 2 subgraphs of length 246 and 324, respec
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -25784,8 +25790,7 @@ RK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25794,14 +25799,12 @@ RK5CYII=
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Yearly-Analysis">Yearly Analysis<a class="anchor-link" href="#Yearly-Analysis">&#182;</a></h1><div class="alert alert-info">
-For the following analysis, **I will use a threshold value of 50%** i.e. an edge between MP i and MP j exists only if MP i and MP j have voted similarily on at least 50% of a given year's ballots. As observed above, this should make visualization significantly easier while keeping most of the MPs in the networks once we drop isolates.
-</div>
+<h1 id="Yearly-Analysis">Yearly Analysis<a class="anchor-link" href="#Yearly-Analysis">&#182;</a></h1><p>For the following analysis, <strong>I will use a threshold value of 50%</strong> i.e. an edge between MP i and MP j exists only if MP i and MP j have voted similarily on at least 50% of a given year's ballots. As observed above, this should make visualization significantly easier while keeping most of the MPs in the networks once we drop isolates.</p>
+
 </div>
 </div>
 </div>
@@ -25844,8 +25847,7 @@ For the following analysis, **I will use a threshold value of 50%** i.e. an edge
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25877,7 +25879,9 @@ For the following analysis, **I will use a threshold value of 50%** i.e. an edge
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[299]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -25952,8 +25956,7 @@ For the following analysis, **I will use a threshold value of 50%** i.e. an edge
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -25962,8 +25965,7 @@ For the following analysis, **I will use a threshold value of 50%** i.e. an edge
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -26009,7 +26011,9 @@ For the following analysis, **I will use a threshold value of 50%** i.e. an edge
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -29682,8 +29686,7 @@ RU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -29711,7 +29714,9 @@ RU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[308]:</div>
+
 
 
 
@@ -29725,8 +29730,7 @@ RU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -29761,7 +29765,9 @@ RU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -34960,8 +34966,7 @@ gg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -34974,8 +34979,7 @@ gg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35023,7 +35027,9 @@ gg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[317]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -35092,8 +35098,7 @@ gg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35102,8 +35107,7 @@ gg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35112,10 +35116,12 @@ gg==
 <h2 id="The-Lobbyist-Model">The Lobbyist Model<a class="anchor-link" href="#The-Lobbyist-Model">&#182;</a></h2><h3 id="Setup">Setup<a class="anchor-link" href="#Setup">&#182;</a></h3><p>Let the (1 x N) vector $v_t$ represent the outcome of a vote at time t where $[v_{t}]_i = 1$ if MP i votes in favor of the law and 0 otherwise.</p>
 <p>Imagine that at time t = 0, all MPs are against a given law, i.e. $v_0 = \overrightarrow{0}$</p>
 <p>A lobbyist is only able to "convince" <strong>a single MP</strong> to become in favor of a law. This MP, however, will then be able to convince her fellow Members of Parliament to vote in favor of the law with probability $p_{ij}$:</p>
-$$p_{ij} = \frac{\text{Number of times when i and j voted the same way in the past}}{\text{Total Number of Votes}}$$<p>resulting in $v_1 = [0, 1, ... 1, ... 0]$ and $v_1 \cdot \iota_N = \text{number of MPs in favor of the law}$. ($\iota_N$ is a vector of ones).</p>
+<p>$$p_{ij} = \frac{\text{Number of times when i and j voted the same way in the past}}{\text{Total Number of Votes}}$$</p>
+<p>resulting in $v_1 = [0, 1, ... 1, ... 0]$ and $v_1 \cdot \iota_N = \text{number of MPs in favor of the law}$. ($\iota_N$ is a vector of ones).</p>
 <h3 id="Given-information-on-the-historic-voting-behaviors-of-all-MPs,-the-lobbyist's-goal-is-therefore-to-choose-this-specific-MP-wisely-so-that-the-expected-number-of-MPs-who-end-up-in-favor-of-the-law-is-maximized.">Given information on the historic voting behaviors of all MPs, the lobbyist's goal is therefore to choose this specific MP wisely so that the expected number of MPs who end up in favor of the law is maximized.<a class="anchor-link" href="#Given-information-on-the-historic-voting-behaviors-of-all-MPs,-the-lobbyist's-goal-is-therefore-to-choose-this-specific-MP-wisely-so-that-the-expected-number-of-MPs-who-end-up-in-favor-of-the-law-is-maximized.">&#182;</a></h3><p>In other word, the lobbyist is <strong>trying to select the most influential MP</strong>, measured as the number and strength of links between her and other MPs.</p>
 <h3 id="1)-Direct-effect-only-(wave_1-influence)">1) Direct effect only (wave_1 influence)<a class="anchor-link" href="#1)-Direct-effect-only-(wave_1-influence)">&#182;</a></h3><p>Suppose we're only interested in the <em>direct</em> peer effect that "activating" (i.e. convincing) MP$_i$ will have on the outcome of the ballot. Deciding on who to focus is therefore fairly straigtforward: it is enough to sum the rows of the weighted adjacency matrix $P$ in order to obtain each MP's expected direct effect on its peers. We can compute the vector of expected direct effect as:</p>
-$$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$<p>NB: this time, no sparsifying threshold is used.</p>
+<p>$$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$</p>
+<p>NB: this time, no sparsifying threshold is used.</p>
 
 </div>
 </div>
@@ -35140,7 +35146,9 @@ $$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$<p>NB: this time, no 
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[326]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -35203,12 +35211,11 @@ $$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$<p>NB: this time, no 
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="This-simple-approach-already-seems-to-do-a-great-job-at-ranking-MPs-according-to-their-influence!">This simple approach already seems to do a great job at ranking MPs according to their influence!<a class="anchor-link" href="#This-simple-approach-already-seems-to-do-a-great-job-at-ranking-MPs-according-to-their-influence!">&#182;</a></h4><p>According to our model, the lobbyist should convince <strong>Bruno Le Roux</strong> — who has led the Socialist Party (i.e. the majority party) in the National Assembly from 2012 until 2016! — in order to maximize the wave_1 number of MPs in favor of the law. This obviously makes a lot of sense: the head of the Majority group in the National Assembly typically gives "voting instructions" (<em>"consignes de votes"</em>) to the rest of the MPs from the majority.</p>
+<h4 id="This-simple-approach-already-seems-to-do-a-great-job-at-ranking-MPs-according-to-their-influence!">This simple approach already seems to do a great job at ranking MPs according to their influence!<a class="anchor-link" href="#This-simple-approach-already-seems-to-do-a-great-job-at-ranking-MPs-according-to-their-influence!">&#182;</a></h4><p>According to our model, the lobbyist should convince <strong>Bruno Le Roux</strong> — who has led the Socialist Party (i.e. the majority party) in the National Assembly from 2012 until 2016! — in order to maximize the wave_1 number of MPs in favor of the law. This obviously makes a lot of sense: the head of the Majority group in the National Assembly typically gives "voting instructions" (<em>"consignes de votes"</em>) to the rest of the MPs from the majority.</p>
 <p><strong>Frédérique Massat</strong>,  <strong>Corinne Erhel</strong>, <strong>Gisèle Biémouret</strong> and <strong>Sylviane Bulteau</strong> were also loyal members of the Socialist Party throughout the whole duration of the legislature (2012-2016).</p>
 
 </div>
@@ -35231,7 +35238,9 @@ $$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$<p>NB: this time, no 
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[327]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -35299,8 +35308,7 @@ $$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$<p>NB: this time, no 
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35310,8 +35318,7 @@ $$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$<p>NB: this time, no 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35350,7 +35357,9 @@ $$\mathbb{E}[\textit{wave_1_influence}] = P \cdot \iota_N$$<p>NB: this time, no 
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>count    636.000000
@@ -35385,7 +35394,9 @@ Name: Expected_Direct_Influence, dtype: float64
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -35506,8 +35517,7 @@ HgDA6BD8AGAYgh8ADEPwA4BhCH4AMAzBDwCGIfgBwDD/C4daBfKe+pK7AAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35516,13 +35526,12 @@ HgDA6BD8AGAYgh8ADEPwA4BhCH4AMAzBDwCGIfgBwDD/C4daBfKe+pK7AAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="2)-Including-Cascading-Effects-(wave_2-influence)">2) Including Cascading Effects (wave_2 influence)<a class="anchor-link" href="#2)-Including-Cascading-Effects-(wave_2-influence)">&#182;</a></h3><p>A slightly more sophisticated model arises when we take into consideration the fact that "activated" nodes at t=1 can in turn try and activate the nodes (MPs) they themselves are connected to.</p>
-<p>Inspired by the existing literature on such &lt;a href= "<a href="https://www.stat.berkeley.edu/~aldous/260-FMIE/Papers/watts.pdf"&gt;">https://www.stat.berkeley.edu/~aldous/260-FMIE/Papers/watts.pdf"&gt;</a> 'Cascading Effects' &lt;/a&gt;, we can estimate such total effect with the following Monte-Carlo procedure:</p>
+<p>Inspired by the existing literature on such &lt;a href= "<a href="https://www.stat.berkeley.edu/~aldous/260-FMIE/Papers/watts.pdf&quot;&gt;">https://www.stat.berkeley.edu/~aldous/260-FMIE/Papers/watts.pdf&quot;&gt;</a> 'Cascading Effects' &lt;/a&gt;, we can estimate such total effect with the following Monte-Carlo procedure:</p>
 <ul>
 <li>at $t=0$, only <em>one</em> node $i$ is activated</li>
 </ul>
@@ -35606,7 +35615,9 @@ HgDA6BD8AGAYgh8ADEPwA4BhCH4AMAzBDwCGIfgBwDD/C4daBfKe+pK7AAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[329]:</div>
+
 
 
 
@@ -35620,8 +35631,7 @@ HgDA6BD8AGAYgh8ADEPwA4BhCH4AMAzBDwCGIfgBwDD/C4daBfKe+pK7AAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35657,7 +35667,9 @@ HgDA6BD8AGAYgh8ADEPwA4BhCH4AMAzBDwCGIfgBwDD/C4daBfKe+pK7AAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -35882,8 +35894,7 @@ AKCA/wewhu78DyWySwAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -35917,7 +35928,9 @@ AKCA/wewhu78DyWySwAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -36158,13 +36171,13 @@ AAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As mentionned before, as the threshold for wave_2 activation increases, the overall influence of each MP converges to her wave_1 influence (no additional node is activated in wave_2). Convergence happens more of less quickly depending on an MP's wave_1 influence:</p>
-$$\lim_{\Theta \to \infty}\mathbb{E}[W_2 \mid \Theta] = \mathbb{E}[W_1]$$
+<p>$$\lim_{\Theta \to \infty}\mathbb{E}[W_2 \mid \Theta] = \mathbb{E}[W_1]$$</p>
+
 </div>
 </div>
 </div>
@@ -36193,7 +36206,9 @@ $$\lim_{\Theta \to \infty}\mathbb{E}[W_2 \mid \Theta] = \mathbb{E}[W_1]$$
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -36594,8 +36609,7 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -36735,7 +36749,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[127]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -36872,8 +36888,7 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -36881,8 +36896,7 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -36917,7 +36931,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -36928,7 +36944,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -36994,7 +37012,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -37005,7 +37025,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -37071,7 +37093,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -37082,7 +37106,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -37148,7 +37174,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -37159,7 +37187,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -37225,7 +37255,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -37236,7 +37268,9 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -37305,25 +37339,20 @@ wz/+8Q9omob29nZ8+9vfLhYCL7zwAl599VUIIbBv3z7cddddAb+C6nL27Fn86Ec/wooVK4o7pb17
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As seen before, using too small a $\Theta$ is both unrealistic and useless because it causes most nodes to consistently activate the full network and therefore most MPs are tied for first place.</p>
 <p>Looking at higher values of theta (50 and 100), however, we can check the performance of our model:</p>
 <p>Interestingly enough, <strong>Marc Dolez</strong>, <strong>André Chassaigne</strong>, <strong>Roger-Gérard Schwartzenberg</strong> and <strong>Marie-George Buffet</strong> are all members of the "far-left" (that is, further left than the government party)!</p>
-<div class="alert alert-info">
-
-What this suggests seems counterintuitive at first: According to our 2_waves model, the lobbyist should target MPs that are **not** from the majority. This somehow makes sense if you remember that the "far left" is both strongly connected to the center left (i.e. the government) on some societal issues, and part of the opposition on most other issues (although probably not for the same reasons). Therefore, our simple model would suggest that their influence/centrality is greater!
-
-</div><p>Being able to split votes by ballot themes (economic, social, etc.) could help investigate this mechanism further.</p>
+<p>What this suggests seems counterintuitive at first: According to our 2_waves model, the lobbyist should target MPs that are <strong>not</strong> from the majority. This somehow makes sense if you remember that the "far left" is both strongly connected to the center left (i.e. the government) on some societal issues, and part of the opposition on most other issues (although probably not for the same reasons). Therefore, our simple model would suggest that their influence/centrality is greater!</p>
+<p>Being able to split votes by ballot themes (economic, social, etc.) could help investigate this mechanism further.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -37385,7 +37414,9 @@ What this suggests seems counterintuitive at first: According to our 2_waves mod
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38041,7 +38072,9 @@ AAAAACiFIAoAAACAUgiiAAAAACjF/wKwD9qA3ouyoQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38770,8 +38803,7 @@ ogAAAAAohSAKAAAAgFIIogAAAAAohSAKAAAAgFL8H0UYlW0fbIecAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -38798,7 +38830,9 @@ ogAAAAAohSAKAAAAgFIIogAAAAAohSAKAAAAgFL8H0UYlW0fbIecAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39858,7 +39892,9 @@ AAAAAEBNEEQBAAAAAACgJgiiAAAAAAAAUBP/H7ds1tzY6oWPAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -40822,7 +40858,9 @@ KAAAAAAAADji/wErsKbO1qzR+AAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -41747,8 +41785,7 @@ AADAFgRRAAAAAAAAsAVBFAAAAAAAAGzxP96tsGqYiAO0AAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -41827,7 +41864,9 @@ AADAFgRRAAAAAAAAsAVBFAAAAAAAAGzxP96tsGqYiAO0AAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -43272,8 +43311,7 @@ AAAAAAAAIAsR7AEAAAAAAABZiGAPAAAAAAAAyEL/P75818l66n8gAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -43288,8 +43326,7 @@ AAAAAAAAIAsR7AEAAAAAAABZiGAPAAAAAAAAyEL/P75818l66n8gAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -43318,7 +43355,9 @@ AAAAAAAAIAsR7AEAAAAAAABZiGAPAAAAAAAAyEL/P75818l66n8gAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Clusters of MPs can be seen very well using hexbin plots from the seaborn library:
@@ -43327,7 +43366,9 @@ AAAAAAAAIAsR7AEAAAAAAABZiGAPAAAAAAAAyEL/P75818l66n8gAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -44090,8 +44131,7 @@ DO2rAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -44121,7 +44161,9 @@ DO2rAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>                                  OLS Regression Results                                  
@@ -44157,8 +44199,7 @@ Warnings:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -44166,8 +44207,7 @@ Warnings:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -44175,8 +44215,7 @@ Warnings:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -44184,8 +44223,7 @@ Warnings:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -44193,8 +44231,7 @@ Warnings:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -44258,7 +44295,9 @@ Warnings:
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -45308,8 +45347,7 @@ FxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -45333,8 +45371,7 @@ FxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -45360,7 +45397,9 @@ FxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[364]:</div>
+
 
 
 
@@ -45387,8 +45426,7 @@ FxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -45417,7 +45455,9 @@ FxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Density: 0.45351019739742765, Diameter: 6
@@ -45426,7 +45466,9 @@ FxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER+QFDFxEREZEfMHQRERER
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -46557,8 +46599,7 @@ Y8IPAABjwg8AAGMBtD8C9RjlAjUAAAAASUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
